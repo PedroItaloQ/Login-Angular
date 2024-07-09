@@ -1,7 +1,10 @@
-<form>
-  <label for="email">Email:</label>
-  <input type="email" id="email">
-  <label for="password">Senha:</label>
-  <input type="password" id="password">
-  <button type="submit">Login</button>
+<p>login works!</p>
+<form action="#">
+  <label for="">Email</label>
+  <input type="email" [(ngModel)]="loginObj.EmailId" name="EmailId" required="">
+
+  <label for="">Password</label>
+  <input type="password" [(ngModel)]="loginObj.Password" name="Password" required="" >
+
+  <button type="submit" (click)="onLogin()" >Login</button>
 </form>
